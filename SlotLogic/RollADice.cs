@@ -3,6 +3,22 @@
 public static class RollADice
 {
     static Random random = new Random();
+
+    public static Dictionary<int, int> DictSeeder()
+    {
+        var dictonary = new Dictionary<int, int>()
+        {
+            {1, 0},
+            {2, 0},
+            {3, 0},
+            {4, 0},
+            {5, 0},
+            {6, 0}
+        };
+
+        return dictonary;
+    }
+
     public static int RandomInteger()
     {
         int randomNUmber = random.Next(1, 7);
@@ -10,15 +26,28 @@ public static class RollADice
         return randomNUmber;
     }
 
-    public static int[] RollTenK()
+    public static int[] RollAndFill (int amount)
     {
-        int[] randomTenKNumberArr = new int[10000];
+        int[] randomNumberArr = new int[amount];
 
-        for ( int i = 0; i < 10000; i++ )
+        for ( int i = 0; i < amount; i++ )
         {
-            randomTenKNumberArr[i] = RandomInteger();
+            randomNumberArr[i] = RandomInteger();
         }
 
-        return randomTenKNumberArr;
+        return randomNumberArr;
+    }
+
+    public static Dictionary<int, int> CountDiceRolls(int amount)
+    {
+        int[] randomNumberArr = RollAndFill(amount);
+        var dictonary = DictSeeder();
+
+        foreach (var number in randomNumberArr)
+        {
+            dictonary[number]++;
+        }
+
+        return dictonary;
     }
 }
