@@ -21,7 +21,7 @@ public static class RollADice
 
     public static int RandomInteger()
     {
-        int randomNUmber = random.Next(1, 7);
+        int randomNUmber = System.Security.Cryptography.RandomNumberGenerator.GetInt32(1, 7);
 
         return randomNUmber;
     }
