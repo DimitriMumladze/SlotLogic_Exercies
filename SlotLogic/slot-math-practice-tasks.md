@@ -27,7 +27,8 @@ Recommended language: C# (matches your backend), but pseudocode/JS/Python all wo
 
 ### Task 0.3 — Seeded RNG
 **Goal:** Run Task 0.2 twice with `new Random(42)` and confirm the two runs produce **identical** counts.
-**Why it matters:** Reproducibility. Provably-fair slots and unit tests both rely on seedable RNG. `System.Random` is fine for learning; production uses `RandomNumberGenerator` (cryptographic).
+**Why it matters:** Reproducibility. Provably-fair slots and unit tests both rely on seedable RNG.
+`System.Random` is fine for learning; production uses `RandomNumberGenerator` (cryptographic).
 
 ### Task 0.4 — Cryptographic RNG
 **Goal:** Use `System.Security.Cryptography.RandomNumberGenerator.GetInt32(1, 7)` and roll 10k dice. Compare distribution to Task 0.2.

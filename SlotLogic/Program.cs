@@ -6,7 +6,7 @@ namespace SlotLogic
     {
         static void Main(string[] args)
         {
-            RollADice.PrintResults(100);
+            Console.WriteLine(Slots.GetRandomSlot());
         }
     }
 }

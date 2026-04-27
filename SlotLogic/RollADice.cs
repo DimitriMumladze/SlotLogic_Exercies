@@ -2,7 +2,6 @@
 
 public static class RollADice
 {
-    static Random random = new Random();
 
     public static Dictionary<int, int> DictSeeder()
     {
