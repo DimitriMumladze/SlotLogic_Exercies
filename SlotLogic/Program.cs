@@ -6,10 +6,7 @@ namespace SlotLogic
     {
         static void Main(string[] args)
         {
-            int i = 10000;
-            int[] randomNumbers = RollADice.RollTenK();
-            foreach (int number in randomNumbers)
-                Console.WriteLine(number);
+            RollADice.PrintResults(100);
         }
     }
 }

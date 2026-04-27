@@ -50,4 +50,13 @@ public static class RollADice
 
         return dictonary;
     }
+
+    public static void PrintResults(int amount)
+    {
+        var dictonary = CountDiceRolls(amount);
+        foreach (var item in dictonary)
+        {
+            Console.WriteLine($"Number {item.Key} was rolled {item.Value} times.");
+        }
+    }
 }
