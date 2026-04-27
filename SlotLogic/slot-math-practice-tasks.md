@@ -15,7 +15,7 @@ Recommended language: C# (matches your backend), but pseudocode/JS/Python all wo
 
 ## Tier 0 — Warm-up: random numbers
 
-### Task 0.1 — Roll a die
+### Task 0.1 — Roll a die ✅
 **Goal:** Print a random integer between 1 and 6.
 **Hint:** `new Random().Next(1, 7)` (upper bound is exclusive in C#).
 **Why it matters:** Every slot spin is, at heart, "roll some dice." Get comfortable with the API and the off-by-one trap of exclusive upper bounds.
