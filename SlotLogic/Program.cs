@@ -6,7 +6,7 @@ namespace SlotLogic
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Slots.GetRandomSlot());
+            Slots.Spin();
         }
     }
 }

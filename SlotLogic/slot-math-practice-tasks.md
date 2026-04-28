@@ -43,7 +43,8 @@ Recommended language: C# (matches your backend), but pseudocode/JS/Python all wo
 **Why it matters:** Reels are *just* weighted lists of symbols. This is the simplest possible reel.
 
 ### Task 1.2 — Weighted pick
-**Goal:** Given `[("Cherry", 50), ("Lemon", 30), ("Bell", 15), ("Seven", 5)]` (weights), pick one symbol so its frequency matches the weights. Run 10k times to verify.
+**Goal:** Given `[("Cherry", 50), ("Lemon", 30), ("Bell", 15), ("Seven", 5)]` (weights), pick one symbol so its frequency matches the weights.
+Run 10k times to verify.
 **Hint:** Sum the weights (100). Roll `Next(0, 100)`. Walk the list subtracting weights until the roll is < 0.
 **Why it matters:** **This is how slots actually work.** Sevens are rare because their *weight* is small — not because the math is fancy. Tattoo this on your brain.
 
