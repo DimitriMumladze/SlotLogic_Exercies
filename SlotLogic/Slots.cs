@@ -10,9 +10,9 @@ public static class Slots
         return slots[index];
     }
 
-    public static int GetRandomNumber(int number)
+    public static int GetRandomNumber()
     {
-        return random.Next(1, number + 1);
+        return random.Next(1, 101);
     }
 
     public static Dictionary<string, int> FillSlotData()
@@ -27,15 +27,5 @@ public static class Slots
         };
 
         return slotData;
-    }
-
-    public static void Spin(int amount)
-    {
-        Dictionary<string, int> slotData = FillSlotData();
-
-        for ( int i = 0; i < amount; i++  )
-        {
-
-        }
     }
 }
